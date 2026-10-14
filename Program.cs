@@ -18,7 +18,7 @@ namespace AssignmentLinq01
             //}
             #endregion
             #region Question2
-           // 2.Get a list of only the product names from ProductList.Print each name.
+            // 2.Get a list of only the product names from ProductList.Print each name.
             //var productNames = Source.ProductList.Select(p => p.ProductName);
 
             //foreach (var name in productNames)
@@ -29,13 +29,24 @@ namespace AssignmentLinq01
             #endregion
             #region Question3
             // 3.Get all products where UnitPrice is between 10 and 30
-             var result = Source.ProductList
-              .Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
+            // var result = Source.ProductList
+            //  .Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30);
 
-            foreach (var product in result)
-            {
-                Console.WriteLine(product);
-            }
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
+            #endregion
+            #region Question4
+           // 4.Get all products that are in stock(UnitsInStock >0) and belong to the "Condiments" category.
+            //var result = Source.ProductList
+            //.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
+
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine(product);
+            //}
 
             #endregion
 
