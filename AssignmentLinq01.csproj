@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\..\Downloads\Data\DataSources\Source.cs" Link="classes\Source.cs" />
+    <Compile Include="..\..\..\Downloads\Data\Models\Customer.cs" Link="classes\Customer.cs" />
+    <Compile Include="..\..\..\Downloads\Data\Models\Order.cs" Link="classes\Order.cs" />
+    <Compile Include="..\..\..\Downloads\Data\Models\Product.cs" Link="classes\Product.cs" />
+    <Compile Include="..\..\..\Downloads\Data\Models\Student.cs" Link="classes\Student.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="classes\" />
   </ItemGroup>
 
