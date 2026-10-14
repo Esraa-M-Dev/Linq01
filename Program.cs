@@ -1,4 +1,6 @@
 ﻿using LINQ.DataSources;
+using System.Drawing;
+using System.Xml.Linq;
 namespace AssignmentLinq01
 {
     internal class Program
@@ -13,7 +15,17 @@ namespace AssignmentLinq01
             foreach (var p in result)
             {
                 Console.WriteLine($"{p.ProductName} - {p.UnitPrice}");
-            } 
+            }
+            #endregion
+            #region Question2
+           // 2.Get a list of only the product names from ProductList.Print each name.
+            var productNames = Source.ProductList.Select(p => p.ProductName);
+
+            foreach (var name in productNames)
+            {
+                Console.WriteLine(name);
+            }
+
             #endregion
 
         }
